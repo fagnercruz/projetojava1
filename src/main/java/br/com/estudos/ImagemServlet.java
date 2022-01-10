@@ -24,11 +24,12 @@ public class ImagemServlet extends HttpServlet {
 		doPost(request, response);
 	}
 
+	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.getParameter("id");
 		
 		//pega o objeto pelo id
-		
+		request.getParameter("id");
+				
 		Pessoa pessoa = new Pessoa();
 		
 		File imagem = new File(pessoa.getImagemCaminho()); // link para o arquivo no disco
